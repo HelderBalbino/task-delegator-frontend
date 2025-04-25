@@ -78,12 +78,12 @@ function App() {
 							</div>
 						</form>
 						<p className='mt-10 text-center text-sm/6 text-gray-500'>
-							Não possui uma conta?{' '}
+							Don't have an account{' '}
 							<a
 								href='#'
 								className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'
 							>
-								Registre-se
+								Sign up
 							</a>
 						</p>
 					</div>
