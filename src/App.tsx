@@ -10,7 +10,7 @@ function App() {
 							<LuClipboardList size={50} />
 						</div>
 						<h1 className='text-center text-2xl/9 font-bold tracking-tight text-gray-900'>
-							Project Management
+							Task Delegator
 						</h1>
 					</div>
 
