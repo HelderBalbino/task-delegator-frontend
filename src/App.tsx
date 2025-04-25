@@ -1,3 +1,5 @@
+import { LuClipboardList } from 'react-icons/lu';
+
 function App() {
 	return (
 		<>
