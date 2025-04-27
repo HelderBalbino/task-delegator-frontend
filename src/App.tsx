@@ -17,7 +17,7 @@ function App() {
 				<div className='absolute inset-0 bg-gradient-to-br from-purple-900/50 via-indigo-800/40 to-blue-800/50 backdrop-blur-md'></div>
 
 				{/* Form Container */}
-				<div className='relative z-10 border-0 shadow-2xl shadow-indigo-800 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-white/10 backdrop-blur-lg'>
+				<div className='relative z-10 border-0 shadow-2xl shadow-indigo-800 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-black backdrop-blur-lg'>
 					<div className='flex flex-col items-center justify-center'>
 						<LuClipboardList
 							size={50}
