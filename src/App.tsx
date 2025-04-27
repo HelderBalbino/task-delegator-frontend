@@ -8,34 +8,31 @@ function App() {
 				className='relative flex min-h-screen flex-1 flex-col justify-center px-6 py-12 sm:px-12 lg:px-24 bg-cover bg-center'
 				style={{
 					backgroundImage:
-						"url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')",
+						"url('https://images.unsplash.com/photo-1581090700227-1acdc66c058e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')",
 					backgroundSize: 'cover',
 					backgroundPosition: 'center',
 					backgroundRepeat: 'no-repeat',
 				}}
 			>
 				{/* Blurred Overlay */}
-				<div className='absolute inset-0 bg-gradient-to-br from-purple-900/50 via-indigo-800/40 to-blue-800/50 backdrop-blur-md'></div>
+				<div className='absolute inset-0 bg-black/50 backdrop-blur-md'></div>
 
 				{/* Animated Form Container */}
 				<motion.div
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, ease: 'easeOut' }}
-					className='relative z-10 border-0 shadow-2xl shadow-indigo-800 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-black backdrop-blur-lg'
+					className='relative z-10 border border-gray-700 shadow-2xl shadow-black/60 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-black/60 backdrop-blur-lg'
 				>
 					<div className='flex flex-col items-center justify-center'>
-						<LuClipboardList
-							size={50}
-							className='text-indigo-300'
-						/>
-						<h1 className='text-center text-3xl font-extrabold tracking-tight text-indigo-100 mt-4'>
+						<LuClipboardList size={50} className='text-blue-400' />
+						<h1 className='text-center text-3xl font-bold tracking-tight text-white mt-4'>
 							Task Delegator
 						</h1>
 					</div>
 
-					<h2 className='mt-4 text-center text-md text-indigo-200'>
-						Input your credentials to login
+					<h2 className='mt-4 text-center text-md text-gray-300'>
+						Welcome back, please sign in
 					</h2>
 
 					<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
@@ -44,9 +41,9 @@ function App() {
 							<div>
 								<label
 									htmlFor='email'
-									className='block text-sm font-medium text-indigo-200'
+									className='block text-sm font-medium text-gray-300'
 								>
-									Email
+									Email address
 								</label>
 								<div className='mt-2'>
 									<input
@@ -55,8 +52,8 @@ function App() {
 										type='email'
 										autoComplete='email'
 										required
-										placeholder='Enter your email'
-										className='block w-full rounded-md bg-white/20 px-3 py-2 text-base text-white placeholder:text-indigo-300 focus:outline-2 focus:outline-indigo-400 sm:text-sm'
+										placeholder='you@example.com'
+										className='block w-full rounded-md bg-white/10 px-3 py-2 text-base text-white placeholder:text-gray-400 focus:outline-2 focus:outline-blue-400 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -66,14 +63,14 @@ function App() {
 								<div className='flex items-center justify-between'>
 									<label
 										htmlFor='password'
-										className='block text-sm font-medium text-indigo-200'
+										className='block text-sm font-medium text-gray-300'
 									>
 										Password
 									</label>
 									<div className='text-sm'>
 										<a
 											href='#'
-											className='font-semibold text-indigo-300 hover:text-indigo-200'
+											className='font-semibold text-blue-400 hover:text-blue-300'
 										>
 											Forgot password?
 										</a>
@@ -86,8 +83,8 @@ function App() {
 										type='password'
 										autoComplete='current-password'
 										required
-										placeholder='Enter your password'
-										className='block w-full rounded-md bg-white/20 px-3 py-2 text-base text-white placeholder:text-indigo-300 focus:outline-2 focus:outline-indigo-400 sm:text-sm'
+										placeholder='••••••••'
+										className='block w-full rounded-md bg-white/10 px-3 py-2 text-base text-white placeholder:text-gray-400 focus:outline-2 focus:outline-blue-400 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -96,7 +93,7 @@ function App() {
 							<div>
 								<button
 									type='submit'
-									className='flex w-full justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-bold text-white shadow-md hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition'
+									className='flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-bold text-white shadow-md hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition'
 								>
 									Sign in
 								</button>
@@ -104,11 +101,11 @@ function App() {
 						</form>
 
 						{/* Sign Up Link */}
-						<p className='mt-8 text-center text-sm text-indigo-300'>
+						<p className='mt-8 text-center text-sm text-gray-400'>
 							Don't have an account?{' '}
 							<a
 								href='#'
-								className='font-semibold text-indigo-200 hover:text-indigo-100'
+								className='font-semibold text-blue-400 hover:text-blue-300'
 							>
 								Sign up
 							</a>
