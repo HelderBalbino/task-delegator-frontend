@@ -1,4 +1,5 @@
 import { LuClipboardList } from 'react-icons/lu';
+import { motion } from 'framer-motion';
 
 function App() {
 	return (
@@ -13,11 +14,16 @@ function App() {
 					backgroundRepeat: 'no-repeat',
 				}}
 			>
-				{/* Blurred Color Overlay */}
+				{/* Blurred Overlay */}
 				<div className='absolute inset-0 bg-gradient-to-br from-purple-900/50 via-indigo-800/40 to-blue-800/50 backdrop-blur-md'></div>
 
-				{/* Form Container */}
-				<div className='relative z-10 border-0 shadow-2xl shadow-indigo-800 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-black backdrop-blur-lg'>
+				{/* Animated Form Container */}
+				<motion.div
+					initial={{ opacity: 0, y: -50 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease: 'easeOut' }}
+					className='relative z-10 border-0 shadow-2xl shadow-indigo-800 rounded-3xl p-8 sm:mx-auto sm:w-full sm:max-w-md bg-black backdrop-blur-lg'
+				>
 					<div className='flex flex-col items-center justify-center'>
 						<LuClipboardList
 							size={50}
@@ -34,6 +40,7 @@ function App() {
 
 					<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 						<form action='#' method='POST' className='space-y-6'>
+							{/* Email Input */}
 							<div>
 								<label
 									htmlFor='email'
@@ -54,6 +61,7 @@ function App() {
 								</div>
 							</div>
 
+							{/* Password Input */}
 							<div>
 								<div className='flex items-center justify-between'>
 									<label
@@ -84,6 +92,7 @@ function App() {
 								</div>
 							</div>
 
+							{/* Submit Button */}
 							<div>
 								<button
 									type='submit'
@@ -94,6 +103,7 @@ function App() {
 							</div>
 						</form>
 
+						{/* Sign Up Link */}
 						<p className='mt-8 text-center text-sm text-indigo-300'>
 							Don't have an account?{' '}
 							<a
@@ -104,7 +114,7 @@ function App() {
 							</a>
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</>
 	);
