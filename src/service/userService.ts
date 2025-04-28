@@ -55,3 +55,9 @@ export const updateUser = async (
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+export const deleteUser = async (id: string) => {
+	return api.delete(`/${id}`, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
