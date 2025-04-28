@@ -10,3 +10,13 @@ const api = axios.create({
 		'Content-Type': 'application/json',
 	},
 });
+
+export const register = async (data: {
+	name: string;
+	email: string;
+	password: string;
+	sector_name: string;
+	company_name: string;
+}) => {
+	return api.post('/register', data);
+};
