@@ -24,3 +24,13 @@ export const register = async (data: {
 export const login = async (data: { email: string; password: string }) => {
 	return api.post('/login', data);
 };
+
+export const registerUser = async (data: {
+	name: string;
+	email: string;
+	password: string;
+}) => {
+	return api.post('/register-user', data, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
