@@ -34,3 +34,9 @@ export const registerUser = async (data: {
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+export const getUsers = async () => {
+	return api.get(`/users`, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
