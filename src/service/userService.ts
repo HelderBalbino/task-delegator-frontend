@@ -20,3 +20,7 @@ export const register = async (data: {
 }) => {
 	return api.post('/register', data);
 };
+
+export const login = async (data: { email: string; password: string }) => {
+	return api.post('/login', data);
+};
