@@ -40,3 +40,9 @@ export const getUsers = async () => {
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+export const getUserById = async (id: string) => {
+	return api.get(`/${id}`, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
