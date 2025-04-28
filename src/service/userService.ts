@@ -46,3 +46,12 @@ export const getUserById = async (id: string) => {
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+export const updateUser = async (
+	id: string,
+	data: { name?: string; email?: string; password?: string },
+) => {
+	return api.put(`/${id}`, data, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
