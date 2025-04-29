@@ -56,7 +56,7 @@ function Form({ onSubmit }: FormProps) {
 
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 					<form onSubmit={formik.handleSubmit} className='space-y-6'>
-						{/* Email field*/}
+						{/* E-mail field*/}
 						<div>
 							<label
 								htmlFor='email'
@@ -83,21 +83,21 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Campo de Senha */}
+						{/* Password field*/}
 						<div>
 							<div className='flex items-center justify-between'>
 								<label
 									htmlFor='password'
 									className='block text-sm/6 font-medium text-gray-900'
 								>
-									Senha
+									Password
 								</label>
 								<div className='text-sm'>
 									<a
 										href='#'
 										className='font-semibold text-indigo-600 hover:text-indigo-500'
 									>
-										Esqueceu a senha?
+										Forgot password?
 									</a>
 								</div>
 							</div>
@@ -121,25 +121,25 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Botão de Submissão */}
+						{/* Submit Button*/}
 						<div>
 							<button
 								type='submit'
 								className='flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
 							>
-								Entrar
+								Log In
 							</button>
 						</div>
 					</form>
 
-					{/* Link para Registro */}
+					{/* Registration Link*/}
 					<p className='mt-10 text-center text-sm/6 text-gray-500'>
-						Não possui uma conta?{' '}
+						Don't Have an Account yet?{' '}
 						<a
 							href='#'
 							className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'
 						>
-							Registre-se
+							Sign Up
 						</a>
 					</p>
 				</div>
