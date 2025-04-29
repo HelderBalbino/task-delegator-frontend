@@ -46,7 +46,7 @@ function Form({ onSubmit }: FormProps) {
 						<LuClipboardList size={50} />
 					</div>
 					<h1 className='text-center text-2xl/9 font-bold tracking-tight text-gray-900'>
-						Projeto de Tarefas
+						Task Delegator
 					</h1>
 				</div>
 
