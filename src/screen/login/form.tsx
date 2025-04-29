@@ -51,12 +51,12 @@ function Form({ onSubmit }: FormProps) {
 				</div>
 
 				<h2 className='mt-2 text-center text-sm/6 text-gray-600'>
-					Entre com suas credenciais
+					Enter your login details
 				</h2>
 
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 					<form onSubmit={formik.handleSubmit} className='space-y-6'>
-						{/* Campo de Email */}
+						{/* Email field*/}
 						<div>
 							<label
 								htmlFor='email'
