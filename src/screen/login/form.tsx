@@ -13,12 +13,10 @@ interface FormProps {
 function Form({ onSubmit }: FormProps) {
 	//yup validation schema
 	const validationSchema = Yup.object({
-		email: Yup.string()
-			.email('Email inválido')
-			.required('Email é obrigatório'),
+		email: Yup.string().email('Invalid Email').required('Email Required'),
 		password: Yup.string()
-			.min(6, 'A senha deve ter pelo menos 6 caracteres')
-			.required('Senha é obrigatória'),
+			.min(6, 'your password must be at least 6 characters')
+			.required('Password Required'),
 	});
 
 	// Formik configuration
