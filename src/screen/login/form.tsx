@@ -19,3 +19,23 @@ function Form({ onSubmit }: FormProps) {
         .min(6, "A senha deve ter pelo menos 6 caracteres")
         .required("Senha é obrigatória"),
     });
+
+
+    // Formik configuration
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema,
+    onSubmit: async (
+      values: { email: string; password: string },
+      { setErrors }: { setErrors: (errors: any) => void }
+    ) => {
+      const errors = await onSubmit(values); // executes the onSubmit function passed as a prop
+      // if the onSubmit function returns errors, set them in Formik
+      if (errors) {
+        setErrors(errors); // if there are errors, set them in Formik
+      }
+    },
+  });
