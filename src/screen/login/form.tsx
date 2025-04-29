@@ -147,3 +147,5 @@ function Form({ onSubmit }: FormProps) {
 		</div>
 	);
 }
+
+export default Form;
