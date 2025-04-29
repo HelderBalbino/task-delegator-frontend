@@ -3,9 +3,6 @@ import * as Yup from 'yup';
 import { LuClipboardList } from 'react-icons/lu';
 
 
-
-
-
 // define the components props  
 interface FormProps {
 	onSubmit: (values: {
@@ -15,6 +12,7 @@ interface FormProps {
 }
 
 function Form({ onSubmit }: FormProps) {
+    //yup validation schema
     const validationSchema = Yup.object({
       email: Yup.string().email("Email inválido").required("Email é obrigatório"),
       password: Yup.string()
