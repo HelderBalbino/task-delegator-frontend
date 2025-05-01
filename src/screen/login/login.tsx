@@ -14,9 +14,6 @@ function Login() {
 	// it uses the useNavigate hook from react-router-dom to redirect to the dashboard
 	// it uses the login function from the userService to send the data to the API
 	// it uses the Form component to render the form
-	// it uses the Formik library to handle the form state and validation
-	// it uses the Yup library to handle the form validation schema
-	// it uses the LuClipboardList icon from the react-icons library to render the icon
 	const handleSubmit = async (values: {
 		email: string;
 		password: string;
