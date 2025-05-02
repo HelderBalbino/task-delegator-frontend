@@ -33,7 +33,7 @@ const App = () => {
 					path='/dashboard'
 					element={
 						<ProtectedRoute>
-							<p>LoggedIn</p>
+							<p className='text-white text-xl'>LoggedIn</p>
 						</ProtectedRoute>
 					}
 				/>
