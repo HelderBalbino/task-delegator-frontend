@@ -34,7 +34,7 @@ const App = () => {
 					path='/dashboard'
 					element={
 						<ProtectedRoute>
-							<Dashboard />
+							<p>LoggedIn</p>
 						</ProtectedRoute>
 					}
 				/>
