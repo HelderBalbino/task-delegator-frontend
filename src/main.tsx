@@ -45,3 +45,14 @@ const App = () => {
 		</BrowserRouter>
 	);
 };
+
+// render the main component of the application
+// it uses the createRoot function from react-dom/client to create a root element
+// it uses the render method to render the App component inside the root element
+// it uses the getElementById method to get the root element by its id
+// it uses the exclamation mark to assert that the element is not null
+// this is a TypeScript feature that allows us to tell the compiler that we are sure that the element is not null
+// this is useful to avoid null checks and make the code cleaner
+// it uses the React.StrictMode component to enable strict mode in the application
+// this is a development mode feature that helps to identify potential problems in the application
+createRoot(document.getElementById('root')!).render();
