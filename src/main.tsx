@@ -18,3 +18,30 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 	}
 	return children; // if the token exists, render the children
 };
+
+// main component of the application
+// it uses the BrowserRouter component to enable routing in the application
+// it uses the Routes component to define the routes of the application
+const App = () => {
+	return (
+		<BrowserRouter>
+			<Routes>
+				{/* LogIn page route*/}
+				<Route path='/' element={<Login />} />
+
+				{/* Protected Dashboard route*/}
+				<Route
+					path='/dashboard'
+					element={
+						<ProtectedRoute>
+							<Dashboard />
+						</ProtectedRoute>
+					}
+				/>
+
+				{/* Default Login route */}
+				<Route path='*' element={<Navigate to='/' replace />} />
+			</Routes>
+		</BrowserRouter>
+	);
+};
