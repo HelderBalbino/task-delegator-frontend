@@ -1,9 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
-import Login from './screen/login/login';
-import Dashboard from './screen/dashboard/Dashboard';
 import React from 'react';
+import Login from './screen/login/login';
 
 // component to protect the routes
 // it checks if the user is authenticated by checking if the token exists in local storage
