@@ -24,6 +24,15 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 const App = () => {
 	return (
 		<BrowserRouter>
+			{/* Main application routes */}
+			{/* The BrowserRouter component wraps the entire application to enable routing */}
+			{/* The Routes component defines the different routes of the application */}
+			{/* The Route component defines a single route */}
+			{/* The path prop defines the URL path for the route */}
+			{/* The element prop defines the component to render for the route */}
+			{/* The Navigate component is used to redirect to a different route */}
+			{/* The ProtectedRoute component is used to protect the dashboard route */}
+			{/* The Login component is used to render the login page */}
 			<Routes>
 				{/* LogIn page route*/}
 				<Route path='/' element={<Login />} />
@@ -52,6 +61,5 @@ const App = () => {
 // it uses the exclamation mark to assert that the element is not null
 // this is a TypeScript feature that allows us to tell the compiler that we are sure that the element is not null
 // this is useful to avoid null checks and make the code cleaner
-// it uses the React.StrictMode component to enable strict mode in the application
-// this is a development mode feature that helps to identify potential problems in the application
+// it uses the App component as the main component of the application
 createRoot(document.getElementById('root')!).render(<App />);
