@@ -54,4 +54,4 @@ const App = () => {
 // this is useful to avoid null checks and make the code cleaner
 // it uses the React.StrictMode component to enable strict mode in the application
 // this is a development mode feature that helps to identify potential problems in the application
-createRoot(document.getElementById('root')!).render();
+createRoot(document.getElementById('root')!).render(<App />);
