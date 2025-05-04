@@ -28,4 +28,23 @@ function Form({ onSubmit }: FormProps) {
 		sector_name: Yup.string().required('Sector is required'),
 		company_name: Yup.string().required('Company is required'),
 	});
+
+	const formik = useFormik({
+		initialValues: {
+			name: '',
+			email: '',
+			password: '',
+			sector_name: '',
+			company_name: '',
+		},
+		validationSchema,
+		onSubmit: async (values, { setErrors }) => {
+			const errors = await onSubmit(values); // Executa a função onSubmit passada por prop
+			if (errors) {
+				setErrors(errors); // Define os erros no Formik, se houver
+			} else {
+				navigate('/'); // Redireciona para a tela de login após o registro
+			}
+		},
+	});
 }
