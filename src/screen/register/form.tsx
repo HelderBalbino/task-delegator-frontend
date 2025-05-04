@@ -15,5 +15,17 @@ interface FormProps {
 }
 
 function Form({ onSubmit }: FormProps) {
-    const navigate = useNavigate();
-  
+	const navigate = useNavigate();
+
+	const validationSchema = Yup.object({
+		name: Yup.string().required('Name is required'),
+		email: Yup.string()
+			.email('Invalid Email')
+			.required('Email is required'),
+		password: Yup.string()
+			.min(6, 'Password must be at least 6 characters')
+			.required('Password is required'),
+		sector_name: Yup.string().required('Sector is required'),
+		company_name: Yup.string().required('Company is required'),
+	});
+}
