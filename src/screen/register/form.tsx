@@ -13,3 +13,7 @@ interface FormProps {
 		company_name: string;
 	}) => Promise<void | { [key: string]: string }>;
 }
+
+function Form({ onSubmit }: FormProps) {
+    const navigate = useNavigate();
+  
