@@ -178,7 +178,7 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Campo de Empresa */}
+						{/* company field*/}
 						<div>
 							<label
 								htmlFor='company_name'
