@@ -219,7 +219,7 @@ function Form({ onSubmit }: FormProps) {
 
 					{/* Link para Login */}
 					<p className='mt-10 text-center text-sm/6 text-gray-500'>
-						Já possui uma conta?{' '}
+						Already have an account?{' '}
 						<a
 							href='/'
 							className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'
