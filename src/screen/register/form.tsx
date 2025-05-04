@@ -206,7 +206,7 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Botão de Submissão */}
+						{/* submit button */}
 						<div>
 							<button
 								type='submit'
