@@ -29,6 +29,8 @@ function Form({ onSubmit }: FormProps) {
 		company_name: Yup.string().required('Company is required'),
 	});
 
+	// formik configuration
+	// useFormik is a hook that helps manage form state and validation
 	const formik = useFormik({
 		initialValues: {
 			name: '',
