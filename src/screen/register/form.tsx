@@ -184,7 +184,7 @@ function Form({ onSubmit }: FormProps) {
 								htmlFor='company_name'
 								className='block text-sm/6 font-medium text-gray-900'
 							>
-								Empresa
+								Company Name
 							</label>
 							<div className='mt-2'>
 								<input
