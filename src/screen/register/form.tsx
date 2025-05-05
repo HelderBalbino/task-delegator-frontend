@@ -41,7 +41,7 @@ function Form({ onSubmit }: FormProps) {
 		},
 		validationSchema,
 		onSubmit: async (values, { setErrors }) => {
-			const errors = await onSubmit(values); // Executa a função onSubmit passada por prop
+			const errors = await onSubmit(values); // executes the onSubmit function passed as a prop
 			if (errors) {
 				setErrors(errors); // Define os erros no Formik, se houver
 			} else {
