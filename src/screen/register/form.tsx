@@ -45,7 +45,7 @@ function Form({ onSubmit }: FormProps) {
 			if (errors) {
 				setErrors(errors); // Defines the errors in the form
 			} else {
-				navigate('/'); // Redireciona para a tela de login após o registro
+				navigate('/'); // Redirects to the login page if there are no errors
 			}
 		},
 	});
