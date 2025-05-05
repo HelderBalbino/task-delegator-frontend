@@ -43,7 +43,7 @@ function Form({ onSubmit }: FormProps) {
 		onSubmit: async (values, { setErrors }) => {
 			const errors = await onSubmit(values); // executes the onSubmit function passed as a prop
 			if (errors) {
-				setErrors(errors); // Define os erros no Formik, se houver
+				setErrors(errors); // Defines the errors in the form
 			} else {
 				navigate('/'); // Redireciona para a tela de login após o registro
 			}
