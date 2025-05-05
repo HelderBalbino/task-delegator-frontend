@@ -58,12 +58,12 @@ function Form({ onSubmit }: FormProps) {
 						<LuClipboardList size={50} />
 					</div>
 					<h1 className='text-center text-2xl/9 font-bold tracking-tight text-gray-900'>
-						Projeto de Tarefas
+						Task Delegator
 					</h1>
 				</div>
 
 				<h2 className='mt-2 text-center text-sm/6 text-gray-600'>
-					Crie sua conta
+					Create your account
 				</h2>
 
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
