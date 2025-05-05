@@ -128,7 +128,7 @@ function Form({ onSubmit }: FormProps) {
 								htmlFor='password'
 								className='block text-sm/6 font-medium text-gray-900'
 							>
-								Senha
+								Password
 							</label>
 							<div className='mt-2'>
 								<input
