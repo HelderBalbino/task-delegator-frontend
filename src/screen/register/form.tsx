@@ -150,13 +150,13 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Campo de Setor */}
+						{/* Sector field*/}
 						<div>
 							<label
 								htmlFor='sector_name'
 								className='block text-sm/6 font-medium text-gray-900'
 							>
-								Setor
+								Sector Name
 							</label>
 							<div className='mt-2'>
 								<input
