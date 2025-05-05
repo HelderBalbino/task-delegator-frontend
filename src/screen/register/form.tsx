@@ -68,13 +68,13 @@ function Form({ onSubmit }: FormProps) {
 
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 					<form onSubmit={formik.handleSubmit} className='space-y-6'>
-						{/* Campo de Nome */}
+						{/* name field*/}
 						<div>
 							<label
 								htmlFor='name'
 								className='block text-sm/6 font-medium text-gray-900'
 							>
-								Nome
+								Name
 							</label>
 							<div className='mt-2'>
 								<input
@@ -95,7 +95,7 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Campo de Email */}
+						{/* Email field */}
 						<div>
 							<label
 								htmlFor='email'
@@ -122,7 +122,7 @@ function Form({ onSubmit }: FormProps) {
 							</div>
 						</div>
 
-						{/* Campo de Senha */}
+						{/* password field */}
 						<div>
 							<label
 								htmlFor='password'
