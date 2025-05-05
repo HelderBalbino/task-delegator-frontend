@@ -14,6 +14,11 @@ interface FormProps {
 	}) => Promise<void | { [key: string]: string }>;
 }
 
+// define the form component
+// The Form component is a functional component that takes in an onSubmit prop
+// which is a function that handles the form submission.
+// It uses the useFormik hook from Formik to manage form state and validation.
+// The component also uses Yup for validation schema to define the rules for each field.
 function Form({ onSubmit }: FormProps) {
 	const navigate = useNavigate();
 
