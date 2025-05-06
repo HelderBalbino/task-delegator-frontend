@@ -7,4 +7,6 @@ function Register() {
         email: string;
         password: string;
         sector_name: string;
+        company_name: string;
+
 
