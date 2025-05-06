@@ -8,5 +8,5 @@ function Register() {
         password: string;
         sector_name: string;
         company_name: string;
-
+    }) => {     }
 
