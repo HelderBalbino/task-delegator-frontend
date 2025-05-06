@@ -6,5 +6,5 @@ function Register() {
         name: string;
         email: string;
         password: string;
-        sectotr_name: string;
+        sector_name: string;
 
