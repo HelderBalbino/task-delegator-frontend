@@ -1,5 +1,5 @@
+import { register } from '../../service/userService';
 import Form from './form';
-import { register } from '../../services/userService';
 
 function Register() {
 	const handleRegister = async (values: {
@@ -10,13 +10,13 @@ function Register() {
 		company_name: string;
 	}) => {
 		try {
-			const response = await register(values); // Chama a função de registro da API
+			const response = await register(values); // calls the register function from userService
 			if (response.data) {
-				console.log('Registro bem-sucedido:', response.data);
-				return; // Retorna sem erros
+				console.log('Successfully Registered', response.data);
+				return;
 			}
 		} catch (err) {
-			return { email: 'Erro ao registrar. Tente novamente.' }; // Retorna erros
+			return { email: 'Registering error, Try again please.' }; // handles the error if the registration fails
 		}
 	};
 
