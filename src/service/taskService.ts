@@ -23,3 +23,11 @@ export const createTask = async (data: {
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+// function to list all tasks
+// It sends a GET request to the API with the token in the headers
+export const getTasksByPage = async (page: number) => {
+	return api.get(`/tasks/${page}`, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
