@@ -43,3 +43,15 @@ export const inProgressTask = async (id: number) => {
 		},
 	);
 };
+
+// function to mark a task as completed
+// It sends a PUT request to the API with the task ID in the URL
+export const completeTask = async (id: number) => {
+	return api.put(
+		`/task/complete/${id}`,
+		{},
+		{
+			headers: { Authorization: `Bearer ${token}` },
+		},
+	);
+};
