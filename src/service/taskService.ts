@@ -10,3 +10,16 @@ const api = axios.create({
 		'Content-Type': 'application/json',
 	},
 });
+
+// Function to create a new task
+// It sends a POST request to the API with the task data
+export const createTask = async (data: {
+	title: string;
+	description: string;
+	status: string;
+	assigned_to_id: string;
+}) => {
+	return api.post('/task', data, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+};
