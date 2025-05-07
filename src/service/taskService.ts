@@ -31,3 +31,15 @@ export const getTasksByPage = async (page: number) => {
 		headers: { Authorization: `Bearer ${token}` },
 	});
 };
+
+// function to mark a task as in progress
+// It sends a PUT request to the API with the task ID in the URL
+export const inProgressTask = async (id: number) => {
+	return api.put(
+		`/task/in_progress/${id}`,
+		{},
+		{
+			headers: { Authorization: `Bearer ${token}` },
+		},
+	);
+};
