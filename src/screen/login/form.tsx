@@ -136,7 +136,7 @@ function Form({ onSubmit }: FormProps) {
 					<p className='mt-10 text-center text-sm/6 text-gray-500'>
 						Don't Have an Account yet?{' '}
 						<a
-							href='#'
+							href='/register'
 							className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'
 						>
 							Sign Up
