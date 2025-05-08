@@ -7,3 +7,4 @@ import {
 	completeTask,
 	deleteTask,
 } from '../../services/taskService';
+import AddUserModal from './modal/addUserModal';
