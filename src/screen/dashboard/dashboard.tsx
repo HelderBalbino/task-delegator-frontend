@@ -27,14 +27,15 @@ const Dashboard = () => {
 	const company = localStorage.getItem('company');
 	const sector = localStorage.getItem('sector');
 
-    // function to load tasks from the API
-  const loadTasks = async (page: number) => {
-    try {
-      const response = await getTasksByPage(page);
-      setTasks(response.data);
-      setError(null);
-    } catch (error) {
-      console.error("Error loading tasks", error);
-      setError(".Error loading tasks. Try again please.");
-    }
+	// function to load tasks from the API
+	const loadTasks = async (page: number) => {
+		try {
+			const response = await getTasksByPage(page);
+			setTasks(response.data);
+			setError(null);
+		} catch (error) {
+			console.error('Error loading tasks', error);
+			setError('.Error loading tasks. Try again please.');
+		}
+	};
 };
