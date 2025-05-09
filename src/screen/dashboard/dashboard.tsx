@@ -9,3 +9,4 @@ import {
 } from '../../services/taskService';
 import AddUserModal from './modal/addUserModal';
 import RemoveUserModal from './modal/removeUserModal';
+import AddTaskModal from './modal/addTaskModal';
