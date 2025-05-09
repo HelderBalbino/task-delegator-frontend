@@ -15,5 +15,7 @@ import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
 	const navigate = useNavigate();
 	const [tasks, setTasks] = useState<Task[]>([]); // state to store tasks
-	const [currentPage, setCurrentPage] = useState(1); // state to store current page]
+	const [currentPage, setCurrentPage] = useState(1); // state to store current page
+	const [showAddUserModal, setShowAddUserModal] = useState(false); // state to control the visibility of the add user modal
+	const [showRemoveUserModal, setShowRemoveUserModal] = useState(false); // state to control the visibility of the remove user modal
 };
