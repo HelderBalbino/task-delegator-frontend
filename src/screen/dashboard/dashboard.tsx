@@ -23,4 +23,5 @@ const Dashboard = () => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
 	const name = localStorage.getItem('name');
+	const role = localStorage.getItem('role');
 };
