@@ -13,9 +13,11 @@ import AddTaskModal from './modal/addTaskModal';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
-	const navigate = useNavigate();
-	const [tasks, setTasks] = useState<Task[]>([]); // state to store tasks
-	const [currentPage, setCurrentPage] = useState(1); // state to store current page
-	const [showAddUserModal, setShowAddUserModal] = useState(false); // state to control the visibility of the add user modal
-	const [showRemoveUserModal, setShowRemoveUserModal] = useState(false); // state to control the visibility of the remove user modal
-};
+    const navigate = useNavigate();
+    const [tasks, setTasks] = useState<Task[]>([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [showAddUserModal, setShowAddUserModal] = useState(false);
+    const [showRemoveUserModal, setShowRemoveUserModal] = useState(false);
+    const [showAddTaskModal, setShowAddTaskModal] = useState(false);
+    const [error, setError] = useState<string | null>(null);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
