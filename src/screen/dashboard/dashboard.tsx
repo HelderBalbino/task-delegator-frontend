@@ -8,3 +8,4 @@ import {
 	deleteTask,
 } from '../../services/taskService';
 import AddUserModal from './modal/addUserModal';
+import RemoveUserModal from './modal/removeUserModal';
