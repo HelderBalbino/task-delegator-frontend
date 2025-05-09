@@ -24,4 +24,5 @@ const Dashboard = () => {
 
 	const name = localStorage.getItem('name');
 	const role = localStorage.getItem('role');
+	const company = localStorage.getItem('company');
 };
