@@ -169,6 +169,26 @@ const Dashboard = () => {
 					</ul>
 				</nav>
 			</div>
+
+			{/* Main content */}
+			<div className='flex-1 p-8'>
+				{/* hamburger button, only visible in mobile devices */}
+				<div className='flex flex-row-reverse'>
+					<button
+						onClick={() => setIsSidebarOpen(isSidebarOpen)}
+						className='lg:hidden p-2 bg-gray-800 text-white rounded-md mb-4'
+					>
+						<FaBars size={24} />
+					</button>
+				</div>
+
+				{/* show errors */}
+				{error && (
+					<div className='mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md'>
+						{error}
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };
