@@ -119,6 +119,55 @@ const Dashboard = () => {
 						Sector: {sector} | Company: {company}
 					</p>
 				</div>
+				<nav>
+					<ul className='space-y-2'>
+						{role === 'admin' && (
+							<>
+								<li>
+									<button
+										onClick={() => {
+											setShowAddUserModal(true);
+											setIsSidebarOpen(false);
+										}}
+										className='w-full text-left px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700'
+									>
+										Add User
+									</button>
+								</li>
+								<li>
+									<button
+										onClick={() => {
+											setShowRemoveUserModal(true);
+											setIsSidebarOpen(false);
+										}}
+										className='w-full text-left px-4 py-2 bg-red-600 rounded-md hover:bg-red-700'
+									>
+										Remove user
+									</button>
+								</li>
+								<li>
+									<button
+										onClick={() => {
+											setShowAddTaskModal(true);
+											setIsSidebarOpen(false);
+										}}
+										className='w-full text-left px-4 py-2 bg-green-600 rounded-md hover:bg-green-700'
+									>
+										Add Task
+									</button>
+								</li>
+							</>
+						)}
+						<li>
+							<button
+								onClick={logout}
+								className='w-full text-left px-4 py-2 bg-red-600 rounded-md hover:bg-red-700'
+							>
+								Sign Out
+							</button>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	);
