@@ -27,7 +27,7 @@ const Dashboard = () => {
 	const company = localStorage.getItem('company');
 	const sector = localStorage.getItem('sector');
 
-	// function to load tasks from the API
+	// function to load tasks
 	const loadTasks = async (page: number) => {
 		try {
 			const response = await getTasksByPage(page);
