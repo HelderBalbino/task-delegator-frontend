@@ -87,4 +87,16 @@ const Dashboard = () => {
 		localStorage.removeItem('sector');
 		navigate('/');
 	};
+
+	return (
+		<div className='flex min-h-screen bg-gray-100'>
+			{/* Overlay to close sidebar on mobile devices */}
+			{isSidebarOpen && (
+				<div
+					className='fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden'
+					onClick={() => setIsSidebarOpen(false)}
+				></div>
+			)}
+		</div>
+	);
 };
