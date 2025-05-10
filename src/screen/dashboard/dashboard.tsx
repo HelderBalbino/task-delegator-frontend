@@ -111,6 +111,8 @@ const Dashboard = () => {
 				>
 					<FaTimes size={24} />
 				</button>
+
+				<h1 className='text-2xl font-bold mb-6'>Dashboard</h1>
 			</div>
 		</div>
 	);
