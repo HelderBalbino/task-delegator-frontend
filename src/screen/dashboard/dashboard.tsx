@@ -66,4 +66,16 @@ const Dashboard = () => {
 			setError('Error in setting task as Completed. Try again please.');
 		}
 	};
+
+	// Function to delete a task
+	const handleDeleteTask = async (taskId: number) => {
+		try {
+			await deleteTask(taskId);
+			loadTasks(currentPage);
+			setError(null);
+		} catch (error) {
+			console.error('Error in deleting task:', error);
+			setError('Error in deleting task. Try again please.');
+		}
+	};
 };
