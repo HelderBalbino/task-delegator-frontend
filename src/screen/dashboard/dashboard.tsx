@@ -78,4 +78,13 @@ const Dashboard = () => {
 			setError('Error in deleting task. Try again please.');
 		}
 	};
+
+	const logout = () => {
+		localStorage.removeItem('token');
+		localStorage.removeItem('name');
+		localStorage.removeItem('role');
+		localStorage.removeItem('company');
+		localStorage.removeItem('sector');
+		navigate('/');
+	};
 };
