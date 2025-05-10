@@ -113,6 +113,12 @@ const Dashboard = () => {
 				</button>
 
 				<h1 className='text-2xl font-bold mb-6'>Dashboard</h1>
+				<div className='mb-8'>
+					<h2 className='text-lg font-semibold'>{name}</h2>
+					<p className='text-sm text-gray-400'>
+						Sector: {sector} | Company: {company}
+					</p>
+				</div>
 			</div>
 		</div>
 	);
