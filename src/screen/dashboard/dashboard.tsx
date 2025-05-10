@@ -43,15 +43,27 @@ const Dashboard = () => {
 		loadTasks(currentPage);
 	}, [currentPage]);
 
-	// function to mark a task as in progress
+	// function to set a task as in progress
 	const handleInProgress = async (taskId: number) => {
 		try {
 			await inProgressTask(taskId);
 			loadTasks(currentPage);
 			setError(null);
 		} catch (error) {
-			console.error('Error to mark task as In Progress:', error);
-			setError('Error to mark task as In Progress. Try again please.');
+			console.error('Error in setting task as In Progress:', error);
+			setError('Error in setting task as In Progress. Try again please.');
+		}
+	};
+
+	// Function to set a task as completed
+	const handleComplete = async (taskId: number) => {
+		try {
+			await completeTask(taskId);
+			loadTasks(currentPage);
+			setError(null);
+		} catch (error) {
+			console.error('Error in setting task as Completed:', error);
+			setError('Error in setting task as Completed. Try again please.');
 		}
 	};
 };
