@@ -98,24 +98,20 @@ const Dashboard = () => {
 				></div>
 			)}
 
-			  {/* Sidebar */}
-      <div
-        className={`fixed inset-y-0 left-0 bg-gray-800 text-white w-64 p-4 transform transition-transform duration-200 ease-in-out ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:static lg:flex lg:flex-col lg:flex-shrink-0 z-50`}
-      >
-        {/* Botton to close (visible only in mobile devices) */}
-        <button
-          onClick={() => setIsSidebarOpen(false)}
-          className="lg:hidden absolute top-2 right-2 p-2 text-white hover:text-gray-300"
-        >
-          <FaTimes size={24} />
-        </button>
-
-
-
-
-
+			{/* Sidebar */}
+			<div
+				className={`fixed inset-y-0 left-0 bg-gray-800 text-white w-64 p-4 transform transition-transform duration-200 ease-in-out ${
+					isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+				} lg:translate-x-0 lg:static lg:flex lg:flex-col lg:flex-shrink-0 z-50`}
+			>
+				{/* Botton to close (visible only in mobile devices) */}
+				<button
+					onClick={() => setIsSidebarOpen(false)}
+					className='lg:hidden absolute top-2 right-2 p-2 text-white hover:text-gray-300'
+				>
+					<FaTimes size={24} />
+				</button>
+			</div>
 		</div>
 	);
 };
