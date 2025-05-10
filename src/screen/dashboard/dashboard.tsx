@@ -35,7 +35,23 @@ const Dashboard = () => {
 			setError(null);
 		} catch (error) {
 			console.error('Error loading tasks', error);
-			setError('.Error loading tasks. Try again please.');
+			setError('Error loading tasks. Try again please.');
+		}
+	};
+
+	useEffect(() => {
+		loadTasks(currentPage);
+	}, [currentPage]);
+
+	// function to mark a task as in progress
+	const handleInProgress = async (taskId: number) => {
+		try {
+			await inProgressTask(taskId);
+			loadTasks(currentPage);
+			setError(null);
+		} catch (error) {
+			console.error('Error to mark task as In Progress:', error);
+			setError('Error to mark task as In Progress. Try again please.');
 		}
 	};
 };
