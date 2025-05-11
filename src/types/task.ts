@@ -4,4 +4,5 @@ export interface Task {
 	description: string;
 	status: 'pending' | 'in_progress' | 'completed';
 	sector_id: number;
+	company_id: number;
 }
