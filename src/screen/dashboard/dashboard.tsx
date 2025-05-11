@@ -258,6 +258,19 @@ const Dashboard = () => {
 					</button>
 				</div>
 			</div>
+
+			{/* Modals */}
+			{showAddUserModal && (
+				<AddUserModal onClose={() => setShowAddUserModal(false)} />
+			)}
+			{showRemoveUserModal && (
+				<RemoveUserModal
+					onClose={() => setShowRemoveUserModal(false)}
+				/>
+			)}
+			{showAddTaskModal && (
+				<AddTaskModal onClose={() => setShowAddTaskModal(false)} />
+			)}
 		</div>
 	);
 };
