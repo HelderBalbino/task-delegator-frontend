@@ -189,7 +189,6 @@ const Dashboard = () => {
 					</div>
 				)}
 				{/* Task list */}
-				{/* Listagem de Tarefas */}
 				<div>
 					<h2 className='text-xl font-bold mb-4'>Tasks</h2>
 					<ul className='space-y-4'>
@@ -255,8 +254,12 @@ const Dashboard = () => {
 				<button
 					onClick={() => setCurrentPage((prev) => prev + 1)}
 					className='px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300'
-				></button>
+				>
+					Next
+				</button>
 			</div>
 		</div>
 	);
 };
+
+export default Dashboard;
