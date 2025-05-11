@@ -241,6 +241,22 @@ const Dashboard = () => {
 					</ul>
 				</div>
 			</div>
+			{/* pagination*/}
+			<div className='flex justify-center mt-8'>
+				<button
+					onClick={() =>
+						setCurrentPage((prev) => Math.max(prev - 1, 1))
+					}
+					className='px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300'
+				>
+					Previous
+				</button>
+				<span className='mx-4 text-lg'>{currentPage}</span>
+				<button
+					onClick={() => setCurrentPage((prev) => prev + 1)}
+					className='px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300'
+				></button>
+			</div>
 		</div>
 	);
 };
