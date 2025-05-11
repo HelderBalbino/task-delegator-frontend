@@ -188,6 +188,58 @@ const Dashboard = () => {
 						{error}
 					</div>
 				)}
+				{/* Task list */}
+				{/* Listagem de Tarefas */}
+				<div>
+					<h2 className='text-xl font-bold mb-4'>Tasks</h2>
+					<ul className='space-y-4'>
+						{tasks.map((task) => (
+							<li
+								key={task.id}
+								className='p-4 bg-white  rounded-md shadow-sm'
+							>
+								<h3 className='font-bold'>{task.title}</h3>
+								<p className='text-gray-600'>
+									{task.description}
+								</p>
+								<p className='text-sm text-gray-500'>
+									Status:{' '}
+									{task.status == 'pending'
+										? 'pending'
+										: task.status == 'in_progress'
+										? 'in progress'
+										: 'completed'}
+								</p>
+								<div className='flex gap-2 mt-2'>
+									<button
+										onClick={() =>
+											handleInProgress(task.id)
+										}
+										className='px-3 py-1 bg-yellow-500 text-white rounded-md hover:bg-yellow-600'
+									>
+										In Progress
+									</button>
+									<button
+										onClick={() => handleComplete(task.id)}
+										className='px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600'
+									>
+										Completed
+									</button>
+									{role === 'admin' && (
+										<button
+											onClick={() =>
+												handleDeleteTask(task.id)
+											}
+											className='px-3 py-1 bg-red-500 text-white rounded-md hover:bg-red-600'
+										>
+											Remove
+										</button>
+									)}
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
 		</div>
 	);
