@@ -3,4 +3,5 @@ export interface Task {
 	title: string;
 	description: string;
 	status: 'pending' | 'in_progress' | 'completed';
+	sector_id: number;
 }
