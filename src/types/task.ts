@@ -1,1 +1,3 @@
-export interface Task {}
+export interface Task {
+	id: number;
+}
