@@ -13,5 +13,6 @@ const AddUserModal = ({ onClose }: AddUserModalProps) => {
 		email: Yup.string()
 			.email('Invalid Email')
 			.required('Email is required'),
+		password: Yup.string(),
 	});
 };
