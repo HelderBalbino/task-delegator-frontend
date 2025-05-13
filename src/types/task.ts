@@ -6,4 +6,5 @@ export interface Task {
 	sector_id: number;
 	company_id: number;
 	assigned_to_id: number;
+	admin_id: number;
 }
