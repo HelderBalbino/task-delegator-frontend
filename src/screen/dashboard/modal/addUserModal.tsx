@@ -8,5 +8,7 @@ interface AddUserModalProps {
 }
 
 const AddUserModal = ({ onClose }: AddUserModalProps) => {
-	const validationSchema = Yup.object({});
+	const validationSchema = Yup.object({
+		name: Yup.string().required('Name is required'),
+	});
 };
