@@ -8,4 +8,5 @@ export interface Task {
 	assigned_to_id: number;
 	admin_id: number;
 	createdAt: string;
+	updatedAt: string;
 }
