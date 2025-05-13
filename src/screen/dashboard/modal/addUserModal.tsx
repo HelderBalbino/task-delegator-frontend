@@ -6,3 +6,9 @@ import { registerUser } from '../../../services/userService';
 interface AddUserModalProps {
 	onClose: () => void; // function to close the modal
 }
+
+const AddUserModal = ({ onClose }: AddUserModalProps) => {
+	
+  });
+
+  };
