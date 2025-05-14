@@ -7,6 +7,6 @@ export interface Task {
 	company_id: number;
 	assigned_to_id: number;
 	admin_id: number;
-	createdAt: string;
-	updatedAt: string;
+	created_at: string;
+	updated_at: string;
 }
