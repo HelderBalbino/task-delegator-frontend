@@ -15,7 +15,7 @@ function Form({ onSubmit }: FormProps) {
 	const validationSchema = Yup.object({
 		email: Yup.string().email('Invalid Email').required('Email Required'),
 		password: Yup.string()
-			.min(6, 'your password must be at least 6 characters')
+			.min(6, 'your password must be at least 8 characters')
 			.required('Password Required'),
 	});
 
